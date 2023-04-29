@@ -1,0 +1,139 @@
+.business_cases {
+  background-color: #fff;
+}
+
+.business_cases_container {
+  margin: 0 auto;
+  padding: 56px 20px 40px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 48px 32px 40px 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 48px 32px 40px 32px;
+  }
+}
+
+.business_cases_text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137.5%; /* 22/16 */
+  text-align: center;
+  color: $grColor;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 138.888889%; /* 25/18 */
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 18px;
+    line-height: 138.888889%; /* 25/18 */
+  }
+}
+
+.business_cases_title {
+  margin-top: 16px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 137.5%; /* 44/32 */
+  text-align: center;
+  color: $grColor;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 135%; /* 54/40 */
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 40px;
+    line-height: 135%; /* 54/40 */
+  }
+}
+
+.business_cases_description {
+  margin-top: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137.5%; /* 22/16 */
+  text-align: center;
+  color: $grColor;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 138.888889%; /* 25/18 */
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 18px;
+    line-height: 138.888889%; /* 25/18 */
+  }
+}
+
+// .business_cases_list {
+//   margin-top: 31px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     margin: -9px;
+//     margin-top: 23px;
+//   }
+
+//   @media screen and (min-width: 1360px) {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     margin: -9px;
+//     margin-top: 23px;
+//   }
+// }
+
+// .business_cases_item {
+//   &:not(:first-child) {
+//     margin-top: 8px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc(100% / 3 - 18px);
+//     margin: 9px;
+//   }
+
+//   @media screen and (min-width: 1360px) {
+//     flex-basis: calc(100% / 3 - 18px);
+//     margin: 9px;
+//   }
+// }
+
+.business_cases_list {
+  margin-top: 31px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+  justify-items: center;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    margin-top: 30px;
+  }
+}
+
+.business_cases_img {
+  width: 100%;
+  &:hover {
+    opacity: 0.5;
+  }
+}
