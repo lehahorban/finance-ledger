@@ -3,66 +3,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  background-image: url('../images/land/Rectangle.jpg'),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-top: 160px;
   padding-bottom: 104px;
+
   @media screen and (min-width: 768px) {
+    padding-top: 378px;
     padding-bottom: 378px;
   }
 
   @media screen and (min-width: 1360px) {
+    padding-top: 272px;
     padding-bottom: 270px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/land/Rectangle.jpg');
-  }
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/land/Rectangle@2x.jpg');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url('../images/land/Rectangle@2x.jpg');
-    }
-  }
-  @media screen and (min-width: 1360px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/land/Rectangle@3x.jpg');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url('../images/land/Rectangle@3x.jpg');
-    }
   }
 }
 
 .hero_title {
-  // margin-top: 62px;
-  margin-top: 30px;
   max-width: 241px;
   font-family: 'Open Sans';
   font-style: normal;
@@ -72,16 +27,12 @@
   text-align: center;
   color: #ffffff;
   @media screen and (min-width: 768px) {
-    // margin-top: 314px;
-    margin-top: 298px;
     max-width: 523px;
     font-size: 55px;
     line-height: 136.363636%; /* 75/55 */
   }
 
   @media screen and (min-width: 1360px) {
-    // margin-top: 314px;
-    margin-top: 282px;
     font-size: 55px;
     line-height: 136.363636%; /* 75/55 */
   }

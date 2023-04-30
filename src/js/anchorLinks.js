@@ -1,19 +1,12 @@
 const links = document.querySelectorAll('a[href^="#"]');
-let headerOffset = document
-  .querySelector('header')
-  .getBoundingClientRect().height;
-
 for (const link of links) {
   link.addEventListener('click', event => {
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute('href');
     const targetElement = document.querySelector(targetId);
-    const elementPosition =
-      targetElement.getBoundingClientRect().top + window.pageYOffset;
-    console.log(elementPosition);
+    const headerOffset = document.querySelector('header').offsetHeight;
+    const elementPosition = targetElement.offsetTop;
     const offsetPosition = elementPosition - headerOffset;
-
-    history.pushState(null, null, targetId);
 
     window.scrollTo({
       top: offsetPosition,
@@ -23,14 +16,8 @@ for (const link of links) {
 }
 
 window.addEventListener('resize', () => {
-  headerOffset = document
-    .querySelector('header')
-    .getBoundingClientRect().height;
+  headerOffset = document.querySelector('header').offsetHeight;
 });
-
-window.onbeforeunload = () => {
-  window.scrollTo(0, 0);
-};
 
 window.addEventListener('load', () => {
   history.replaceState(null, null, ' ');

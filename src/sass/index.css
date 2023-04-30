@@ -97,6 +97,37 @@ sup {
   overflow: hidden;
 }
 
+.overlay {
+  margin: 0 auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/land/Rectangle.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/land/Rectangle.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/land/Rectangle@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/land/Rectangle@2x.jpg");
+  }
+}
+@media screen and (min-width: 1360px) {
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/land/Rectangle@3x.jpg");
+  }
+}
+@media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (min-resolution: 192dpi), screen and (min-width: 1360px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/land/Rectangle@3x.jpg");
+  }
+}
+
 .container {
   margin: 0 auto;
   width: 320px;
@@ -116,6 +147,10 @@ sup {
 }
 
 .header {
+  max-width: 1360px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
   width: 100%;
 }
 
@@ -240,10 +275,7 @@ sup {
 }
 
 .fixed-header {
-  position: fixed;
-  top: 0;
   background-color: #333333;
-  z-index: 5;
   opacity: 0.8;
 }
 
@@ -252,51 +284,23 @@ sup {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  background-image: url("../images/land/Rectangle.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-top: 160px;
   padding-bottom: 104px;
 }
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 378px;
     padding-bottom: 378px;
   }
 }
 @media screen and (min-width: 1360px) {
   .hero {
+    padding-top: 272px;
     padding-bottom: 270px;
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/land/Rectangle.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/land/Rectangle@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/land/Rectangle@2x.jpg");
-  }
-}
-@media screen and (min-width: 1360px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/land/Rectangle@3x.jpg");
-  }
-}
-@media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1360px) and (min-resolution: 192dpi), screen and (min-width: 1360px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/land/Rectangle@3x.jpg");
   }
 }
 
 .hero_title {
-  margin-top: 30px;
   max-width: 241px;
   font-family: "Open Sans";
   font-style: normal;
@@ -308,7 +312,6 @@ sup {
 }
 @media screen and (min-width: 768px) {
   .hero_title {
-    margin-top: 298px;
     max-width: 523px;
     font-size: 55px;
     line-height: 136.363636%; /* 75/55 */
@@ -316,7 +319,6 @@ sup {
 }
 @media screen and (min-width: 1360px) {
   .hero_title {
-    margin-top: 282px;
     font-size: 55px;
     line-height: 136.363636%; /* 75/55 */
   }

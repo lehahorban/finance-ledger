@@ -1,4 +1,8 @@
 .header {
+  max-width: 1360px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
   width: 100%;
 }
 
@@ -118,9 +122,6 @@
 }
 
 .fixed-header {
-  position: fixed;
-  top: 0;
   background-color: #333333;
-  z-index: 5;
   opacity: 0.8;
 }
