@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /finance-ledger/ && cp _headers dist/"
+    "build": "parcel build src/*.html --public-url /finance-ledger/"
   },
   "repository": {
     "type": "git",
