@@ -73,44 +73,6 @@
   }
 }
 
-// .business_cases_list {
-//   margin-top: 31px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     margin: -9px;
-//     margin-top: 23px;
-//   }
-
-//   @media screen and (min-width: 1360px) {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     margin: -9px;
-//     margin-top: 23px;
-//   }
-// }
-
-// .business_cases_item {
-//   &:not(:first-child) {
-//     margin-top: 8px;
-//   }
-//   @media screen and (min-width: 768px) {
-//     flex-basis: calc(100% / 3 - 18px);
-//     margin: 9px;
-//   }
-
-//   @media screen and (min-width: 1360px) {
-//     flex-basis: calc(100% / 3 - 18px);
-//     margin: 9px;
-//   }
-// }
-
 .business_cases_list {
   margin-top: 31px;
   display: grid;
